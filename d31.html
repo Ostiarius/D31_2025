@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Restaurant Menu of Chance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #8B5CF6; /* Violet-500 */
+            --color-secondary: #EC4899; /* Pink-500 */
+            --color-bg: #1F2937; /* Gray-800 */
+            --color-text: #F9FAFB; /* Gray-50 */
+            --color-card: #374151; /* Gray-700 */
+            --color-border: #4B5563; /* Gray-600 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            min-height: 100vh;
+        }
+        .menu-card {
+            background-color: var(--color-card);
+            border: 2px solid var(--color-border);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .section-header {
+            border-bottom: 2px solid var(--color-secondary);
+            color: var(--color-secondary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .icon {
+            color: var(--color-primary);
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 lg:p-12">
+
+    <div class="max-w-4xl mx-auto">
+        <header class="text-center mb-10">
+            <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight text-white mb-2">
+                The Restaurant Menu of <span class="text-violet-500">Chance</span>
+            </h1>
+            <!-- The tagline has been removed -->
+        </header>
+
+        <main class="space-y-10">
+            
+            <!-- Chance Size Bites -->
+            <section class="menu-card p-6 rounded-xl">
+                <h2 class="section-header text-3xl font-bold flex items-center">
+                    <svg class="icon w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l-1 12H6L5 9z"></path></svg>
+                    Chance Size Bites
+                </h2>
+                <ul class="divide-y divide-gray-600">
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$3.50</span>
+                        <span class="text-gray-300 text-right">I'm the timekeeper for those whose schedules are decided by a chance.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$4.00</span>
+                        <span class="text-gray-300 text-right">I decide the fate of those who play in the Middle.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$3.75</span>
+                        <span class="text-gray-300 text-right">Governs your current fortune.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$3.25</span>
+                        <span class="text-gray-300 text-right">My faces bear the petals of the field.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Main Menu -->
+            <section class="menu-card p-6 rounded-xl">
+                <h2 class="section-header text-3xl font-bold flex items-center">
+                    <svg class="icon w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    Main Menu
+                </h2>
+                <ul class="divide-y divide-gray-600">
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$15.50</span>
+                        <span class="text-gray-300 text-right">Tasseography.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$14.00</span>
+                        <span class="text-gray-300 text-right">Rocky at best.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$18.00</span>
+                        <span class="text-gray-300 text-right">Protection for all sides.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$16.75</span>
+                        <span class="text-gray-300 text-right">Required to get out of fight club.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$12.00</span>
+                        <span class="text-gray-300 text-right">Official currency of the college student.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$13.50</span>
+                        <span class="text-gray-300 text-right">A cure for fevers.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$17.50</span>
+                        <span class="text-gray-300 text-right">A pointed choice.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$18.50</span>
+                        <span class="text-gray-300 text-right">My central prop is bound in human flesh and written in a forgotten language.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$16.00</span>
+                        <span class="text-gray-300 text-right">Check-in is murder.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$14.75</span>
+                        <span class="text-gray-300 text-right">You can control the narrative.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$17.00</span>
+                        <span class="text-gray-300 text-right">Take control of your situation.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$15.25</span>
+                        <span class="text-gray-300 text-right">Make things more complicated.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$13.00</span>
+                        <span class="text-gray-300 text-right">It never gets old.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Drinks -->
+            <section class="menu-card p-6 rounded-xl">
+                <h2 class="section-header text-3xl font-bold flex items-center">
+                    <svg class="icon w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.586a2 2 0 012.828 0L19 7.172v1.414l-4.5 4.5L12 12.5l-4.5 4.5l-1.414-1.414L10.5 10l-4.5-4.5z"></path></svg>
+                    Drinks
+                </h2>
+                <ul class="divide-y divide-gray-600">
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$5.50</span>
+                        <span class="text-gray-300 text-right">Cures what ails you.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$6.00</span>
+                        <span class="text-gray-300 text-right">I live at the intersection of island heat and pure fire.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$4.50</span>
+                        <span class="text-gray-300 text-right">My acidic hoard is your best roast master.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$5.75</span>
+                        <span class="text-gray-300 text-right">My fiery breath is just the best round!</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Specials -->
+            <section class="menu-card p-6 rounded-xl">
+                <h2 class="section-header text-3xl font-bold flex items-center">
+                    <svg class="icon w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Specials
+                </h2>
+
+                <h3 class="text-2xl font-semibold text-violet-400 mt-4 mb-2 border-b border-gray-600 pb-1">Dan Special</h3>
+                <ul class="divide-y divide-gray-600">
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$19.99</span>
+                        <span class="text-gray-300 text-right">An evening of work.</span>
+                    </li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold text-violet-400 mt-6 mb-2 border-b border-gray-600 pb-1">Tori Special</h3>
+                <ul class="divide-y divide-gray-600">
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$16.50</span>
+                        <span class="text-gray-300 text-right">I still don’t get it.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$17.50</span>
+                        <span class="text-gray-300 text-right">Instructions followed, calcification may have been required.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$14.99</span>
+                        <span class="text-gray-300 text-right">I am twisted and dyed.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Kids Menu -->
+            <section class="menu-card p-6 rounded-xl">
+                <h2 class="section-header text-3xl font-bold flex items-center">
+                    <svg class="icon w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3 .895-3 2 1.343 2 3 2m0-8V6m0 6h.01M12 21A9 9 0 013 12h18a9 9 0 01-9 9z"></path></svg>
+                    Kids Menu
+                </h2>
+                <ul class="divide-y divide-gray-600 mb-4">
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$6.50</span>
+                        <span class="text-gray-300 text-right">I demand quarters.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$5.00</span>
+                        <span class="text-gray-300 text-right">I'm the simple control that's better than hitting the wall.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$7.50</span>
+                        <span class="text-gray-300 text-right">I'm a shimmering symbol that proves your talent.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$7.00</span>
+                        <span class="text-gray-300 text-right">Received in triumph.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$6.00</span>
+                        <span class="text-gray-300 text-right">Come with cheese.</span>
+                    </li>
+                    <li class="flex justify-between items-start py-3">
+                        <span class="text-xl font-bold text-violet-300 mr-4">$5.50</span>
+                        <span class="text-gray-300 text-right">I just don’t get it.</span>
+                    </li>
+                </ul>
+                <p class="text-base font-semibold text-yellow-300 italic p-3 bg-gray-600 rounded-lg">
+                    Playmates are available at request for a limited time.
+                </p>
+            </section>
+        </main>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>&copy; 2025 The House of Random Results. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body> 
+</html>
